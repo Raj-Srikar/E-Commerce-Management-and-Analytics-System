@@ -9,7 +9,7 @@
     </head>
     <body>
         <nav>
-            <span></span>
+            <a href="listing.html"><i class="fa fa-th-list"></i></a>
         </nav>
         <main>
             <div class="stats">

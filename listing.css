@@ -1,0 +1,116 @@
+h1{
+    color: #001568;
+    display: inline-block;
+    position: absolute;
+    left: 11vw;
+    top: 5vh;
+    font-size: 45px;
+    font-family: sans-serif;
+}
+main{
+    width: 60%;
+}
+table, td, th {  
+    border: 1px solid rgb(0, 21, 104);
+    text-align: center;
+    background-color: #ededff;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 25vh;
+    color: #001568;
+    font-family: sans-serif;
+    box-shadow: 0px 5px 25px rgb(181, 181, 241);
+}
+th{
+    background-color: #d9d9ff;
+}
+th,td{
+    padding: 15px;
+    transition: 0.25s;
+}
+tbody>tr:first-child{
+    border-bottom: 5px;
+}
+th>img{
+    width: 50px;
+    filter: invert(9%) sepia(63%) saturate(4377%) hue-rotate(225deg) brightness(95%) contrast(112%);
+}
+tr .active{
+    background-color: rgb(212, 255, 212);
+    text-decoration: underline;
+    cursor: pointer;
+}
+tr .inactive{
+    background-color: rgb(255, 212, 212);
+    text-decoration: underline;
+    cursor: pointer;
+}
+tr:hover td{
+    background-color: #e0e0fd;
+}
+tr:hover .active{
+    background-color: rgb(187, 253, 187);
+}
+tr:hover .inactive{
+    background-color: rgb(252, 196, 196);
+}
+td>i{
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+aside{
+    float: right;
+}
+
+#sp-calculator{
+    padding: 25px 20px;
+    margin-top: 19vh;
+    border-radius: 15px;
+    box-shadow: 0px 8px 25px rgb(175, 175, 228);
+}
+
+#sp-calculator input[type="text"], #sp-calculator input[type="text"]:focus, select{
+    display: block;
+    border: 2px solid darkblue;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90%;
+    margin: 15px 0;
+    outline: none;
+    color: darkblue;
+    font-size: 18px;
+}
+#sp-calculator input[type="text"]:focus{
+    background-color: #e9e9ff;
+    box-shadow: 0px 0px 5px rgb(202, 202, 234);
+}
+#sp-calculator input[type="text"]::placeholder{
+    color: #b9b7da;
+}
+select{
+    width: 99%;
+}
+option>span{
+    float: right;
+}
+#sp-calculator button{
+    background-color: #e2e0ff;
+    border: 3px solid rgb(50, 50, 128);
+    color: darkblue;
+    border-radius: 15px;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 25%;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+#sp-calculator button:hover{
+    background-color: #cac5ff;
+}

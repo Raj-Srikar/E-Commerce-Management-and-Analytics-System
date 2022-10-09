@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="listing.css">
+        <title>Dashboard</title>
+        <script crossorigin="anonymous" src="https://kit.fontawesome.com/f325a34ebe.js"></script>
+    </head>
+    <body>
+        <h1>Listing Management</h1>
+        <nav>
+            <a href="/das.html"><i class="fa fa-home"></i></a>
+        </nav>
+        <main>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Product ID</th>
+                        <th>Stock Avb</th>
+                        <th><img src="flipkart.svg"></th>
+                        <th><img src="amazon.svg"></th>
+                        <th><img src="myntra.svg"></th>
+                    </tr>
+                    <tr>
+                        <td>Item Number 1</td>
+                        <td>653636</td>
+                        <td>98</td>
+                        <td class="active">Active<i class="fa fa-repeat"></i></td>
+                        <td class="inactive">Inactive<i class="fa fa-repeat"></i></td>
+                        <td class="inactive">Inactive<i class="fa fa-repeat"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Item Number 2</td>
+                        <td>653635</td>
+                        <td>45</td>
+                        <td class="active">Active<i class="fa fa-repeat"></i></td>
+                        <td class="active">Active<i class="fa fa-repeat"></i></td>
+                        <td class="inactive">Inactive<i class="fa fa-repeat"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Item Number 3</td>
+                        <td>653637</td>
+                        <td>65</td>
+                        <td class="inactive">Inactive<i class="fa fa-repeat"></i></td>
+                        <td class="active">Active<i class="fa fa-repeat"></i></td>
+                        <td class="active">Active<i class="fa fa-repeat"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Item Number 4</td>
+                        <td>653638</td>
+                        <td>98</td>
+                        <td class="inactive">Inactive<i class="fa fa-repeat"></i></td>
+                        <td class="active">Active<i class="fa fa-repeat"></i></td>
+                        <td class="inactive">Inactive<i class="fa fa-repeat"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Item Number 5</td>
+                        <td>653639</td>
+                        <td>32</td>
+                        <td class="active">Active<i class="fa fa-repeat"></i></td>
+                        <td class="inactive">Inactive<i class="fa fa-repeat"></i></td>
+                        <td class="active">Active<i class="fa fa-repeat"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <aside>
+            <div id="sp-calculator">
+                <input type="text" placeholder="Cost Price" onkeypress="return isNumber(event)">
+                <input type="text" placeholder="Desired Profit" onkeypress="return isNumber(event)">
+                <select id="country" name="country">
+                    <option value="">Clothing&emsp;-&emsp;12%</option>
+                    <option value="">Booking&emsp;-&emsp;3%</option>
+                    <option value="">CD&emsp;-&emsp;12%</option>
+                    <option value="">Pendrive&emsp;-&emsp;18%</option>
+                    <option value="">SSD&emsp;-&emsp;18%</option>
+                    <option value="">HDD&emsp;-&emsp;18%</option>
+                    <option value="">Laptop Accessory&emsp;-&emsp;5%</option>
+                </select>
+                <button>Calculate</button>
+            </div>
+        </aside>
+        <script src="listing.js"></script>
+    </body>
+</html>

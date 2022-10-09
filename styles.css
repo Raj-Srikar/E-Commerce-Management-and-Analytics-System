@@ -1,6 +1,19 @@
 body{
     margin: 0;
 }
+nav{
+    cursor: pointer;
+}
+nav a{
+    height: 100%;
+}
+nav i{
+    top: 50%;
+    left: 35%;
+    font-size: 20px;
+    position: absolute;
+    color: white;
+}
 main{
     position: absolute;
     margin: auto;
