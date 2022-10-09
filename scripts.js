@@ -26,6 +26,8 @@ function sortOrders(data){
     return sortapproval(data);
 }
 function displayOrders(data){
+    data = sortOrders(data);
+    inject='';
     for (let i = 0; i < data.length; i++) {
         let isapproval = data[i].approval == ''
         inject += '<div class="order-card';
@@ -40,9 +42,30 @@ function displayOrders(data){
         inject += '<p class="order-id">'+ data[i].pid + '</p>';
         inject += '<p class="delivery">Delivery:&nbsp;<span>' + data[i].dop + '</span></p>';
         if(isapproval)
-            inject += '<span class="approve"><i class="fa fa-check"></i>Approve</span><span class="reject"><i class="fa fa-times"></i>Reject</span>'
+            inject += '<span class="approve" onclick="approveOrder(this)"><i class="fa fa-check"></i>Approve</span><span class="reject" onclick="rejectOrder(this)"><i class="fa fa-times"></i>Reject</span>'
         inject += '</div>';
     }
     aside.innerHTML = inject;
 
+}
+
+function rejectOrder(ele){
+    oid = ele.parentElement.getElementsByClassName('order-id')[0].innerHTML;
+    for (i = 0; i < orderJSON.length; i++) {
+        const o = orderJSON[i];
+        if(o.pid == oid)
+            break
+    }
+    orderJSON.splice(i,1);
+    displayOrders(orderJSON);
+}
+function approveOrder(ele){
+    oid = ele.parentElement.getElementsByClassName('order-id')[0].innerHTML;
+    for (i = 0; i < orderJSON.length; i++) {
+        const o = orderJSON[i];
+        if(o.pid == oid)
+            break
+    }
+    orderJSON[i].approval = 'yes';
+    displayOrders(orderJSON);
 }

@@ -38,7 +38,11 @@ main{
 .stats>div>h1{
     display: inline-block;
     font-size: 27px;
-    margin-top: 25%;
+    margin-top: 18%;
+    text-transform: uppercase;
+}
+.stats>div>span{
+    font-size: 20px;
 }
 
 .graphs{

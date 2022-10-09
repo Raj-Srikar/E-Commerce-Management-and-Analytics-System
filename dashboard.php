@@ -13,9 +13,9 @@
         </nav>
         <main>
             <div class="stats">
-                <div><h1>Flipkart</h1></div>
-                <div><h1>Amazon</h1></div>
-                <div><h1>Myntra</h1></div>
+                <div><h1>Flipkart</h1><br><span>Total Sales: 874</span></div>
+                <div><h1>Amazon</h1><br><span>Total Sales: 987</span></div>
+                <div><h1>Myntra</h1><br><span>Total Sales: 623</span></div>
             </div>
             <div class="graphs">
                 <script src="chart.js"></script>
