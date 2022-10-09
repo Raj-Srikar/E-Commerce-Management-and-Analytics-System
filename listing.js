@@ -27,3 +27,12 @@ function isNumber(evt) {
     }
     return true;
 }
+
+function calculateSP(cal){
+    cp = parseInt(document.querySelector('input[placeholder="Cost Price"]').value);
+    p = parseInt(document.querySelector('input[placeholder="Desired Profit"]').value);
+    cat = parseInt(document.getElementById('category').value);
+    sp = ((cp+p)*cat)/100;
+    h = '<b>Ideal Selling Price is: Rs.'+(sp+cp+p)+'</b>'
+    cal.parentElement.innerHTML = h + cal.parentElement.innerHTML;
+}

@@ -71,16 +71,16 @@
             <div id="sp-calculator">
                 <input type="text" placeholder="Cost Price" onkeypress="return isNumber(event)">
                 <input type="text" placeholder="Desired Profit" onkeypress="return isNumber(event)">
-                <select id="country" name="country">
-                    <option value="">Clothing&emsp;-&emsp;12%</option>
-                    <option value="">Booking&emsp;-&emsp;3%</option>
-                    <option value="">CD&emsp;-&emsp;12%</option>
-                    <option value="">Pendrive&emsp;-&emsp;18%</option>
-                    <option value="">SSD&emsp;-&emsp;18%</option>
-                    <option value="">HDD&emsp;-&emsp;18%</option>
-                    <option value="">Laptop Accessory&emsp;-&emsp;5%</option>
+                <select id="category" name="category">
+                    <option value="12">Clothing&emsp;-&emsp;12%</option>
+                    <option value="3">Booking&emsp;-&emsp;3%</option>
+                    <option value="12">CD&emsp;-&emsp;12%</option>
+                    <option value="18">Pendrive&emsp;-&emsp;18%</option>
+                    <option value="18">SSD&emsp;-&emsp;18%</option>
+                    <option value="18">HDD&emsp;-&emsp;18%</option>
+                    <option value="5">Laptop Accessory&emsp;-&emsp;5%</option>
                 </select>
-                <button>Calculate</button>
+                <span><button onclick="calculateSP(this)">Calculate</button></span>
             </div>
         </aside>
         <script src="listing.js"></script>
